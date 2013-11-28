@@ -34,6 +34,7 @@ before_install:
  - export PATH=/opt/ghc/$GHCVER/bin:$PATH
 
 install:
+ - alias cabal='cabal-1.18'
  - cabal-1.18 update
  - cabal-1.18 install --only-dependencies --enable-tests --enable-benchmarks
 
